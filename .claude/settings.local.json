@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(pgrep:*)",
+      "Bash(.config)",
+      "Bash(tee:*)",
+      "Bash(yes:*)",
+      "Bash(make:*)",
+      "Bash(ssh:*)",
+      "Bash(ping:*)",
+      "Bash(find:*)",
+      "Bash(2)",
+      "Bash(NUL)",
+      "Bash(findstr:*)",
+      "Bash(echo:*)",
+      "WebFetch(domain:mirror-03.infra.openwrt.org)",
+      "Bash(wsl --list:*)",
+      "Bash(wsl -d Ubuntu-24.04 bash -c \"cd /mnt/c/GIT/csfs && cp configs/config.r4pro-quectel openwrt/.config && echo ''Config copied successfully''\")",
+      "Bash(wsl -d Ubuntu-24.04 bash -c \"cd /mnt/c/GIT/csfs/openwrt && make defconfig 2>&1 | tail -20\")",
+      "Bash(wsl -d Ubuntu-24.04 bash -c \"cd /mnt/c/GIT/csfs/openwrt && nproc\")",
+      "Bash(wsl -d Ubuntu-24.04 bash:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
